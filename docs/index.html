@@ -672,7 +672,7 @@
                     <li>Engineered Python automation to monitor and manage Border Gateway instances across a large-scale cloud infrastructure, reducing system downtime by 30% across 100+ instances</li>
                     <li>Implemented fine-grained access-control policies in AWS for 10+ multi-tenant environments supporting the product delivery pipeline</li>
                     <li>Mentored three interns to build a comprehensive testing framework for validating secure HTTP and non-HTTP tunnel connections using custom Python scripts</li>
-                    <li>Resolved 30+ security tickets across incident response workflows, accelerating vulnerability mitigation and driving CI/CD pipeline remediation to reduce mean-time-to-resolution (MTTR)</li>
+                    <li>Resolved 30+ tickets across storage optimization of logs, mitigating throttling issues and driving CI/CD pipeline remediation to reduce mean-time-to-resolution (MTTR)</li>
                     <li>Collaborated with product and security teams to evaluate third-party integrations and ensure compliance with internal security standards and industry best practices</li>
                 </ul>
             </div>
@@ -705,7 +705,7 @@
                         <span class="proj-status st-live">Live</span>
                     </div>
                     <p class="proj-desc">Zero-trust architecture simulator demonstrating 95% attack containment through lateral movement prevention and micro-segmentation techniques.</p>
-                    <div class="proj-links"><a href="https://github.com/TejasDR01/Zerotrust-Network-Simulator" target="_blank" class="pl code">⌥ Code</a><a href="#" target="_blank" class="pl demo">↗ Demo</a></div>
+                    <div class="proj-links"><a href="https://github.com/TejasDR01/Zerotrust-Network-Simulator" target="_blank" class="pl code">⌥ Code</a><a href="https://zerotrust-network-simulator.onrender.com" target="_blank" class="pl demo">↗ Demo</a></div>
                     <div class="proj-tags">
                         <span class="tag ta">Python</span><span class="tag ts">Flask</span><span class="tag tr">Security</span><span class="tag tn">REST API</span>
                     </div>
@@ -724,7 +724,7 @@
                         <span class="proj-status st-res">Research</span>
                     </div>
                     <p class="proj-desc">AI-powered vulnerability management system with network scanning, exploit prediction, and risk-based prioritization using ML models.</p>
-                    <div class="proj-links"><a href="#" class="pl code">⌥ Code</a><a href="#" class="pl demo">↗ Demo</a></div>
+                    <div class="proj-links"><a href="https://github.com/TejasDR01/Vulnerability-Management-AI" target="_blank" class="pl code">⌥ Code</a><a href="https://vulnerability-management-ai.onrender.com/" target="_blank" class="pl demo">↗ Demo</a></div>
                     <div class="proj-tags">
                         <span class="tag ta">Python</span><span class="tag tv">AI/ML</span><span class="tag ts">Scikit-Learn</span><span class="tag tr">Security</span>
                     </div>
@@ -743,7 +743,7 @@
                         <span class="proj-status st-live">Live</span>
                     </div>
                     <p class="proj-desc">Secure web application with real-time communication, robust authentication, and comprehensive security testing with end-to-end encryption.</p>
-                    <div class="proj-links"><a href="https://github.com/TejasDR01/Chatmate-Web-App" target="_blank" class="pl code">⌥ Code</a><a href="#" target="_blank" class="pl demo">↗ Demo</a></div>
+                    <div class="proj-links"><a href="https://github.com/TejasDR01/Chatmate-Web-App" target="_blank" class="pl code">⌥ Code</a><a href="https://chatmate-web-app-frontend.onrender.com" target="_blank" class="pl demo">↗ Demo</a></div>
                     <div class="proj-tags">
                         <span class="tag ta">NodeJS</span><span class="tag ts">WebSockets</span><span class="tag tn">REST API</span><span class="tag tr">E2E Enc.</span>
                     </div>
@@ -762,7 +762,7 @@
                         <span class="proj-status st-live">Live</span>
                     </div>
                     <p class="proj-desc">Cross-platform application (web &amp; Android) for exploring artists and artworks with a shared REST API architecture and modern UI.</p>
-                    <div class="proj-links"><a href="https://github.com/TejasDR01/Artsy-Artist-Explorer" target="_blank" class="pl code">⌥ Code</a><a href="#" target="_blank" class="pl demo">↗ Demo</a></div>
+                    <div class="proj-links"><a href="https://github.com/TejasDR01/Artsy-Artist-Explorer" target="_blank" class="pl code">⌥ Code</a><a href="https://artsy-artist-explorer.onrender.com" target="_blank" class="pl demo">↗ Demo</a></div>
                     <div class="proj-tags">
                         <span class="tag tv">Angular</span><span class="tag ta">NodeJS</span><span class="tag ts">Kotlin</span><span class="tag tn">Android</span>
                     </div>
@@ -778,7 +778,6 @@
                 <div class="proj-body">
                     <div class="proj-meta">
                         <div class="proj-name">CV Workout Trainer</div>
-                        <span class="proj-status st-dev">In Dev</span>
                     </div>
                     <p class="proj-desc">Real-time workout tracking using computer vision and pose estimation for form correction, rep counting, and performance analytics.</p>
                     <div class="proj-links"><a href="https://github.com/TejasDR01/CV-Based-Workout-App" target="_blank" class="pl code">⌥ Code</a></div>
@@ -797,7 +796,6 @@
                 <div class="proj-body">
                     <div class="proj-meta">
                         <div class="proj-name">Object Navigation Car-bot</div>
-                        <span class="proj-status st-live">Live</span>
                     </div>
                     <p class="proj-desc">Autonomous surveillance robot with object recognition, real-time navigation, and environment mapping using computer vision and Arduino.</p>
                     <div class="proj-links"><a href="https://github.com/TejasDR01/Object-Navigation-Car-Bot" target="_blank" class="pl code">⌥ Code</a></div>
@@ -967,9 +965,9 @@ function drawMatrix(ts) {
 
     // Trail fade — semi-transparent bg repaint
     if (light) {
-        ctx.fillStyle = 'rgba(250,247,240,0.055)';
+        ctx.fillStyle = 'rgba(240,247,240,0.04)';
     } else {
-        ctx.fillStyle = 'rgba(6,8,17,0.055)';
+        ctx.fillStyle = 'rgba(6,8,17,0.04)';
     }
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -983,9 +981,9 @@ function drawMatrix(ts) {
 
         // Leading (brightest) character
         if (light) {
-            ctx.fillStyle = 'rgba(160,80,10,0.28)';   // deep burnt orange head
+            ctx.fillStyle = 'rgba(0,0,0)';   // deep burnt orange head
         } else {
-            ctx.fillStyle = 'rgba(255,220,100,0.35)';  // bright warm amber head
+            ctx.fillStyle = 'rgba(255,220,100,0.7)';  // bright warm amber head
         }
         ctx.fillText(char, i * FONT_SIZE, y);
 
@@ -994,9 +992,9 @@ function drawMatrix(ts) {
         if (drops[i] > 4) {
             const char2 = CHARS[Math.floor(Math.random() * CHARS.length)];
             if (light) {
-                ctx.fillStyle = 'rgba(120,60,8,0.28)';
+                ctx.fillStyle = 'rgba(255,100,0)';
             } else {
-                ctx.fillStyle = 'rgba(255,149,0,0.32)';
+                ctx.fillStyle = 'rgba(255,149,0,0.6)';
             }
             ctx.fillText(char2, i * FONT_SIZE, y - FONT_SIZE * (2 + Math.floor(Math.random() * 3)));
         }
@@ -1059,11 +1057,11 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCLI(); 
 
 const cmds = {
     whoami:     `root@tejas-portfolio\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nUser:     Tejas Devanapalli Ramachandra\nRole:     USC Grad Student / Software Engineer\nLocation: Los Angeles, CA\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
-    about:      `PROFILE\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nFull-stack software engineer with a strong foundation\nin systems programming, distributed systems, and\nsecurity engineering. Currently pursuing an MS in\nComputer Science at USC.\n\nHands-on experience building production-grade systems\nat ISRO and Lookout Security. Passionate about scalable\narchitectures, DevSecOps pipelines, AI-powered apps,\nand delivering robust software balancing performance,\nreliability, and security.\n\nEDUCATION\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[1] University of Southern California\n    MS, Computer Science  |  Jan 2025 – Present\nCoursework: Applied Cryptography, Security Systems,\nOperating Systems, Web Technologies, Algorithms\n\n[2] PES University\n    BTech, Computer Science Engineering  |  Aug 2019 – May 2023\nCoursework: Information Security, Digital Forensics,\n    Computer Networks, DSA, OS, DBMS, Software Engineering\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
-    experience: `WORK HISTORY\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[1] ISRO — Software Engineer Intern (Nov–Dec 2024)\n    · Secure orchestration for 40+ distributed systems\n    · Threat modeling & automated testing in CI/CD\n    · DevSecOps with Jenkins on Unix/Linux\n    · Unit & integration tests for mission-critical code\n\n[2] Lookout Security — SWE Security (Jan 2023–Jan 2024)\n    · Python automation: 30% downtime reduction\n    · AWS IAM for 10+ multi-tenant SASE environments\n    · Built REST API layer for internal security tooling\n    · Mentored 3 interns on tunnel testing framework\n    · Resolved 30+ incident response security tickets\n    · Evaluated third-party integrations for compliance\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
+    about:      `PROFILE\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nSoftware engineer with a strong foundation\nin systems programming, distributed systems, and\nsecurity engineering. Currently pursuing an MS in\nComputer Science at USC.\n\nHands-on experience building production-grade systems\nat ISRO and Lookout Security. Passionate about scalable\narchitectures, DevSecOps pipelines, AI-powered apps,\nand delivering robust software balancing performance,\nreliability, and security.\n\nEDUCATION\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[1] University of Southern California\n    MS, Computer Science  |  Jan 2025 – Present\nCoursework: Applied Cryptography, Security Systems, Operating Systems, Database Systems, Web Technologies, Algorithms\n\n[2] PES University\n    BTech, Computer Science Engineering  |  Aug 2019 – May 2023\nCoursework: Information Security, Digital Forensics, Computer Networks, DSA, OS, DBMS, Software Engineering\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
+    experience: `WORK HISTORY\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[1] ISRO — Software Engineer Intern (Nov–Dec 2024)\n    · Secure orchestration for 40+ distributed systems\n    · Unit & integration tests for mission-critical code\n\n[2] Lookout Security — SWE Security (Jan 2023–Jan 2024)\n    · Python automation: 30% downtime reduction\n    · Implementation os access control polocies for 10+ multi-tenant environments\n    · Mentored 3 interns on tunnel testing framework\n    · Resolved 30+ incident response security tickets\n    · Evaluated third-party integrations for compliance\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
     projects:   `PROJECTS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[1] Zero-Trust Network Simulator\n    Python · Flask · REST API\n\n[2] Vulnerability Management with AI\n    Python · Scikit-Learn · ML Models\n\n[3] Chatmate — Secure Messaging App\n    NodeJS · WebSockets · E2E Encryption\n\n[4] Artsy Artist Explorer\n    Angular · NodeJS · Kotlin · Android\n\n[5] CV Workout Trainer\n    Python · TensorFlow · OpenCV\n\n[6] Object Navigation Car-bot\n    Unity 3D · Arduino · OpenCV\n\n[7] Trend Tracker: Twitter Analysis\n    Python · Kafka · SQL · Streaming\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
     skills:     `TECHNICAL ARSENAL\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nLanguages:\n  Python, C/C++, Java, JavaScript, TypeScript,\n  Bash, PowerShell, Perl, Kotlin, SQL, HTML/CSS\n\nDevOps & Cloud:\n  Git/GitHub, Jenkins, Docker, Ansible, AWS,\n  GCP, Azure, Jira, Linux, Postman, CI/CD, Terraform\n\nSecurity Tools:\n  Metasploit, Wireshark, Nmap, Nikto, OpenSSL,\n  Suricata, Splunk, Burp Suite, Kali Linux,\n  OWASP ZAP, Snort\n\nAI / ML:\n  TensorFlow, Scikit-Learn, OpenCV, LangChain,\n  PyTorch, LLMs, NumPy, Pandas, Matplotlib\n\nWeb Frameworks:\n  Flask, Angular, ReactJS, NodeJS, Express,\n  REST APIs, GraphQL, WebSockets\n\nDatabases & Systems:\n  PostgreSQL, MySQL, MongoDB, Redis, Kafka,\n  Unix/Linux, Networking, TCP/IP\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
-    contact:    `CONTACT CHANNELS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n📧 tejasdr@usc.edu\n💼 linkedin.com/in/yourprofile\n🐙 github.com/yourprofile\n📍 Los Angeles, CA\n\n[OPEN TO CONNECT]`,
+    contact:    `CONTACT CHANNELS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n📧 tdevanap@usc.edu\n💼 linkedin.com/in/devtram\n🐙 github.com/TejasDR01\n📍 Los Angeles, CA\n\n[OPEN TO CONNECT]`,
     help:       `COMMANDS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nwhoami      identity\nabout       background & summary\nexperience  work history\nprojects    project list\nskills      tech stack\ncontact     links\nclear       clear buffer\nexit        close terminal\nhelp        this menu`
 };
 
