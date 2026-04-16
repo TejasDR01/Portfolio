@@ -379,16 +379,7 @@
         .proj-icon{font-size:50px;z-index:1;position:relative;filter:drop-shadow(0 0 18px rgba(255,149,0,.35));animation:float 4s ease-in-out infinite;}
         @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
 
-        .proj-ext{
-            position:absolute;top:9px;right:9px;z-index:3;
-            width:30px;height:30px;border-radius:50%;
-            background:var(--primary);color:var(--bg-0);
-            display:flex;align-items:center;justify-content:center;
-            font-size:13px;font-weight:700;cursor:pointer;text-decoration:none;
-            opacity:0;transform:scale(.8);transition:all .3s;
-            box-shadow:0 4px 12px var(--primary-glow);
-        }
-        .proj-card:hover .proj-ext{opacity:1;transform:scale(1);}
+
 
         .proj-body{padding:20px 20px 18px;flex:1;display:flex;flex-direction:column;}
         .proj-meta{display:flex;align-items:flex-start;gap:8px;margin-bottom:10px;flex-wrap:wrap;}
@@ -692,36 +683,32 @@
         </div>
 
         <div class="proj-grid">
-
-            <div class="proj-card reveal visible" data-type="security" style="">
+            <div class="proj-card reveal visible" data-type="ai" data-categories="security ai" style="">
                 <div class="proj-preview">
-                    <div class="proj-chrome"><div class="chd"></div><div class="chd"></div><div class="chd"></div><div class="ch-url">zero-trust-sim.local/dashboard</div></div>
-                    <div class="proj-bg"><div class="proj-icon">🛡️</div></div>
-                    <a href="#" class="proj-ext">↗</a>
+                    <div class="proj-chrome"><div class="chd"></div><div class="chd"></div><div class="chd"></div><div class="ch-url">ai-log-analyzer.app/gallery</div></div>
+                    <div><img src="./AI-log-Analyzer.png" height="100%" width="100%"/></div>
                 </div>
                 <div class="proj-body">
                     <div class="proj-meta">
-                        <div class="proj-name">Zero-Trust Network Simulator</div>
-                        <span class="proj-status st-live">Live</span>
+                        <div class="proj-name">AI Log Analyzer</div>
                     </div>
-                    <p class="proj-desc">Zero-trust architecture simulator demonstrating 95% attack containment through lateral movement prevention and micro-segmentation techniques.</p>
-                    <div class="proj-links"><a href="https://github.com/TejasDR01/Zerotrust-Network-Simulator" target="_blank" class="pl code">⌥ Code</a><a href="https://zerotrust-network-simulator.onrender.com" target="_blank" class="pl demo">↗ Demo</a></div>
+                    <p class="proj-desc">AI-powered log analysis tool that ingests system and application logs, detects anomalies, and surfaces actionable insights using Rule based Engine and LLMs — cutting mean-time-to-detection for incidents compared to manual review.</p>
+                    <div class="proj-links"><a href="https://github.com/TejasDR01/AI-Log-Analyzer" target="_blank" class="pl code">⌥ Code</a></div>
                     <div class="proj-tags">
-                        <span class="tag ta">Python</span><span class="tag ts">Flask</span><span class="tag tr">Security</span><span class="tag tn">REST API</span>
+                        <span class="tag tv">React</span><span class="tag ta">Python</span><span class="tag ts">FastAPI</span><span class="tag tn">LLMs</span>
                     </div>
                 </div>
             </div>
 
-            <div class="proj-card reveal visible" data-type="security" style="">
+            <div class="proj-card reveal visible" data-type="security" data-categories="security ai" style="">
                 <div class="proj-preview">
                     <div class="proj-chrome"><div class="chd"></div><div class="chd"></div><div class="chd"></div><div class="ch-url">vuln-ai.app/threat-intel</div></div>
-                    <div class="proj-bg"><div class="proj-icon">🤖</div></div>
-                    <a href="#" class="proj-ext">↗</a>
+                    <div><img src="./VMAI-screenshot.png" height="100%" width="100%"/></div>
                 </div>
                 <div class="proj-body">
                     <div class="proj-meta">
                         <div class="proj-name">Vulnerability Mgmt with AI</div>
-                        <span class="proj-status st-res">Research</span>
+                        <span class="proj-status st-live">live</span>
                     </div>
                     <p class="proj-desc">AI-powered vulnerability management system with network scanning, exploit prediction, and risk-based prioritization using ML models.</p>
                     <div class="proj-links"><a href="https://github.com/TejasDR01/Vulnerability-Management-AI" target="_blank" class="pl code">⌥ Code</a><a href="https://vulnerability-management-ai.onrender.com/" target="_blank" class="pl demo">↗ Demo</a></div>
@@ -731,30 +718,27 @@
                 </div>
             </div>
 
-            <div class="proj-card reveal visible" data-type="web" style="">
+            <div class="proj-card reveal visible" data-type="ai" data-categories="ai" style="">
                 <div class="proj-preview">
-                    <div class="proj-chrome"><div class="chd"></div><div class="chd"></div><div class="chd"></div><div class="ch-url">chatmate.secure/messaging</div></div>
-                    <div class="proj-bg"><div class="proj-icon">💬</div></div>
-                    <a href="#" class="proj-ext">↗</a>
+                    <div class="proj-chrome"><div class="chd"></div><div class="chd"></div><div class="chd"></div><div class="ch-url">cv-workout.ai/track</div></div>
+                    <div class="proj-bg"><div class="proj-icon">🏋️</div></div>
                 </div>
                 <div class="proj-body">
                     <div class="proj-meta">
-                        <div class="proj-name">Chatmate — Secure Messaging</div>
-                        <span class="proj-status st-live">Live</span>
+                        <div class="proj-name">CV Workout Trainer</div>
                     </div>
-                    <p class="proj-desc">Secure web application with real-time communication, robust authentication, and comprehensive security testing with end-to-end encryption.</p>
-                    <div class="proj-links"><a href="https://github.com/TejasDR01/Chatmate-Web-App" target="_blank" class="pl code">⌥ Code</a><a href="https://chatmate-web-app-frontend.onrender.com" target="_blank" class="pl demo">↗ Demo</a></div>
+                    <p class="proj-desc">Real-time workout tracking using computer vision and pose estimation for form correction, rep counting, and performance analytics.</p>
+                    <div class="proj-links"><a href="https://github.com/TejasDR01/CV-Based-Workout-App" target="_blank" class="pl code">⌥ Code</a></div>
                     <div class="proj-tags">
-                        <span class="tag ta">NodeJS</span><span class="tag ts">WebSockets</span><span class="tag tn">REST API</span><span class="tag tr">E2E Enc.</span>
+                        <span class="tag ta">Python</span><span class="tag tv">TensorFlow</span><span class="tag ts">OpenCV</span>
                     </div>
                 </div>
             </div>
 
-            <div class="proj-card reveal visible" data-type="web" style="">
+            <div class="proj-card reveal visible" data-type="web" data-categories="web" style="">
                 <div class="proj-preview">
                     <div class="proj-chrome"><div class="chd"></div><div class="chd"></div><div class="chd"></div><div class="ch-url">artsy-explorer.app/gallery</div></div>
-                    <div class="proj-bg"><div class="proj-icon">🎨</div></div>
-                    <a href="#" class="proj-ext">↗</a>
+                    <div><img src="./Artsy-screenshot.png" height="100%" width="100%"/></div>
                 </div>
                 <div class="proj-body">
                     <div class="proj-meta">
@@ -769,29 +753,63 @@
                 </div>
             </div>
 
-            <div class="proj-card reveal visible" data-type="ai" style="">
+            <div class="proj-card reveal visible" data-type="hardware" data-categories="hardware" style="">
                 <div class="proj-preview">
-                    <div class="proj-chrome"><div class="chd"></div><div class="chd"></div><div class="chd"></div><div class="ch-url">cv-workout.ai/track</div></div>
-                    <div class="proj-bg"><div class="proj-icon">🏋️</div></div>
-                    <a href="#" class="proj-ext">↗</a>
+                    <div class="proj-chrome"><div class="chd"></div><div class="chd"></div><div class="chd"></div><div class="ch-url">kernel-dev.sys/scheduler</div></div>
+                    <div><img src="./kernel-screenshot.png" height="100%" width="100%"/></div>
                 </div>
                 <div class="proj-body">
                     <div class="proj-meta">
-                        <div class="proj-name">CV Workout Trainer</div>
+                        <div class="proj-name">OS (Kernel) Development</div>
                     </div>
-                    <p class="proj-desc">Real-time workout tracking using computer vision and pose estimation for form correction, rep counting, and performance analytics.</p>
-                    <div class="proj-links"><a href="https://github.com/TejasDR01/CV-Based-Workout-App" target="_blank" class="pl code">⌥ Code</a></div>
+                    <p class="proj-desc">Designed and built 3 core OS subsystems — process scheduler, virtual memory manager, and file system — in C on an x86 emulator.</p>
+                    <div class="proj-links"><a href="#" class="pl code">⌥ Code</a></div>
                     <div class="proj-tags">
-                        <span class="tag ta">Python</span><span class="tag tv">TensorFlow</span><span class="tag ts">OpenCV</span>
+                        <span class="tag ta">C</span><span class="tag ts">x86</span><span class="tag tr">OS / Kernel</span><span class="tag tv">Systems</span><span class="tag tn">Memory Mgmt</span>
                     </div>
                 </div>
             </div>
 
-            <div class="proj-card reveal visible" data-type="hardware" style="">
+            <div class="proj-card reveal visible" data-type="security" data-categories="security" style="">
+                <div class="proj-preview">
+                    <div class="proj-chrome"><div class="chd"></div><div class="chd"></div><div class="chd"></div><div class="ch-url">zero-trust-sim.local/dashboard</div></div>
+                    <div><img src="./Zerotrust-screenshot.png" height="100%" width="100%"/></div>
+                </div>
+                <div class="proj-body">
+                    <div class="proj-meta">
+                        <div class="proj-name">Zero-Trust Network Simulator</div>
+                        <span class="proj-status st-live">Live</span>
+                    </div>
+                    <p class="proj-desc">Zero-trust architecture simulator demonstrating 95% attack containment through lateral movement prevention and micro-segmentation techniques.</p>
+                    <div class="proj-links"><a href="https://github.com/TejasDR01/Zerotrust-Network-Simulator" target="_blank" class="pl code">⌥ Code</a><a href="https://zerotrust-network-simulator.onrender.com" target="_blank" class="pl demo">↗ Demo</a></div>
+                    <div class="proj-tags">
+                        <span class="tag ta">Python</span><span class="tag ts">Flask</span><span class="tag tr">Security</span><span class="tag tn">REST API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj-card reveal visible" data-type="web" data-categories="web security" style="">
+                <div class="proj-preview">
+                    <div class="proj-chrome"><div class="chd"></div><div class="chd"></div><div class="chd"></div><div class="ch-url">chatmate.secure/messaging</div></div>
+                    <div><img src="./Chatmate-screenshot.png" height="100%" width="100%"/></div>
+                </div>
+                <div class="proj-body">
+                    <div class="proj-meta">
+                        <div class="proj-name">Chatmate — Secure Messaging</div>
+                        <span class="proj-status st-live">Live</span>
+                    </div>
+                    <p class="proj-desc">Secure web application with real-time communication, robust authentication, and comprehensive security testing with end-to-end encryption.</p>
+                    <div class="proj-links"><a href="https://github.com/TejasDR01/Chatmate-Web-App" target="_blank" class="pl code">⌥ Code</a><a href="https://chatmate-web-app-frontend.onrender.com" target="_blank" class="pl demo">↗ Demo</a></div>
+                    <div class="proj-tags">
+                        <span class="tag ta">NodeJS</span><span class="tag ts">WebSockets</span><span class="tag tn">REST API</span><span class="tag tr">E2E Enc.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj-card reveal visible" data-type="hardware" data-categories="hardware ai" style="">
                 <div class="proj-preview">
                     <div class="proj-chrome"><div class="chd"></div><div class="chd"></div><div class="chd"></div><div class="ch-url">carbot.surveillance/nav</div></div>
                     <div class="proj-bg"><div class="proj-icon">🚗</div></div>
-                    <a href="#" class="proj-ext">↗</a>
                 </div>
                 <div class="proj-body">
                     <div class="proj-meta">
@@ -805,11 +823,10 @@
                 </div>
             </div>
 
-            <div class="proj-card reveal visible" data-type="ai" style="">
+            <div class="proj-card reveal visible" data-type="ai" data-categories="ai" style="">
                 <div class="proj-preview">
                     <div class="proj-chrome"><div class="chd"></div><div class="chd"></div><div class="chd"></div><div class="ch-url">trend-tracker.io/live</div></div>
                     <div class="proj-bg"><div class="proj-icon">📊</div></div>
-                    <a href="#" class="proj-ext">↗</a>
                 </div>
                 <div class="proj-body">
                     <div class="proj-meta">
@@ -1047,7 +1064,7 @@ document.querySelectorAll('.filter-btn').forEach(b => b.addEventListener('click'
     document.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('active'));
     b.classList.add('active');
     const f = b.dataset.filter;
-    document.querySelectorAll('.proj-card').forEach(c => { c.style.display = f === 'all' || c.dataset.type === f ? '' : 'none'; });
+    document.querySelectorAll('.proj-card').forEach(c => { const cats = (c.dataset.categories || '').split(' '); c.style.display = f === 'all' || cats.includes(f) ? '' : 'none'; });
 }));
 
 /* ── CLI ── */
@@ -1059,7 +1076,7 @@ const cmds = {
     whoami:     `root@tejas-portfolio\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nUser:     Tejas Devanapalli Ramachandra\nRole:     USC Grad Student / Software Engineer\nLocation: Los Angeles, CA\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
     about:      `PROFILE\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nSoftware engineer with a strong foundation\nin systems programming, distributed systems, and\nsecurity engineering. Currently pursuing an MS in\nComputer Science at USC.\n\nHands-on experience building production-grade systems\nat ISRO and Lookout Security. Passionate about scalable\narchitectures, DevSecOps pipelines, AI-powered apps,\nand delivering robust software balancing performance,\nreliability, and security.\n\nEDUCATION\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[1] University of Southern California\n    MS, Computer Science  |  Jan 2025 – Present\nCoursework: Applied Cryptography, Security Systems, Operating Systems, Database Systems, Web Technologies, Algorithms\n\n[2] PES University\n    BTech, Computer Science Engineering  |  Aug 2019 – May 2023\nCoursework: Information Security, Digital Forensics, Computer Networks, DSA, OS, DBMS, Software Engineering\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
     experience: `WORK HISTORY\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[1] ISRO — Software Engineer Intern (Nov–Dec 2024)\n    · Secure orchestration for 40+ distributed systems\n    · Unit & integration tests for mission-critical code\n\n[2] Lookout Security — SWE Security (Jan 2023–Jan 2024)\n    · Python automation: 30% downtime reduction\n    · Implementation os access control polocies for 10+ multi-tenant environments\n    · Mentored 3 interns on tunnel testing framework\n    · Resolved 30+ incident response security tickets\n    · Evaluated third-party integrations for compliance\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
-    projects:   `PROJECTS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[1] Zero-Trust Network Simulator\n    Python · Flask · REST API\n\n[2] Vulnerability Management with AI\n    Python · Scikit-Learn · ML Models\n\n[3] Chatmate — Secure Messaging App\n    NodeJS · WebSockets · E2E Encryption\n\n[4] Artsy Artist Explorer\n    Angular · NodeJS · Kotlin · Android\n\n[5] CV Workout Trainer\n    Python · TensorFlow · OpenCV\n\n[6] Object Navigation Car-bot\n    Unity 3D · Arduino · OpenCV\n\n[7] Trend Tracker: Twitter Analysis\n    Python · Kafka · SQL · Streaming\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
+    projects:   `PROJECTS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n[1] Zero-Trust Network Simulator\n    Python · Flask · REST API\n\n[2] Vulnerability Management with AI\n    Python · Scikit-Learn · ML Models\n\n[3] Chatmate — Secure Messaging App\n    NodeJS · WebSockets · E2E Encryption\n\n[4] Artsy Artist Explorer\n    Angular · NodeJS · Kotlin · Android\n\n[5] CV Workout Trainer\n    Python · TensorFlow · OpenCV\n\n[6] Object Navigation Car-bot\n    Unity 3D · Arduino · OpenCV\n\n[7] Trend Tracker: Twitter Analysis\n    Python · Kafka · SQL · Streaming\n\n[8] OS (Kernel) Development\n    C · x86 · Preemptive Scheduler · Virtual Memory\n\n[9] AI Log Analyzer\n    Python · React · FastAPI · LLMs\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
     skills:     `TECHNICAL ARSENAL\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nLanguages:\n  Python, C/C++, Java, JavaScript, TypeScript,\n  Bash, PowerShell, Perl, Kotlin, SQL, HTML/CSS\n\nDevOps & Cloud:\n  Git/GitHub, Jenkins, Docker, Ansible, AWS,\n  GCP, Azure, Jira, Linux, Postman, CI/CD, Terraform\n\nSecurity Tools:\n  Metasploit, Wireshark, Nmap, Nikto, OpenSSL,\n  Suricata, Splunk, Burp Suite, Kali Linux,\n  OWASP ZAP, Snort\n\nAI / ML:\n  TensorFlow, Scikit-Learn, OpenCV, LangChain,\n  PyTorch, LLMs, NumPy, Pandas, Matplotlib\n\nWeb Frameworks:\n  Flask, Angular, ReactJS, NodeJS, Express,\n  REST APIs, GraphQL, WebSockets\n\nDatabases & Systems:\n  PostgreSQL, MySQL, MongoDB, Redis, Kafka,\n  Unix/Linux, Networking, TCP/IP\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
     contact:    `CONTACT CHANNELS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n📧 tdevanap@usc.edu\n💼 linkedin.com/in/devtram\n🐙 github.com/TejasDR01\n📍 Los Angeles, CA\n\n[OPEN TO CONNECT]`,
     help:       `COMMANDS\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nwhoami      identity\nabout       background & summary\nexperience  work history\nprojects    project list\nskills      tech stack\ncontact     links\nclear       clear buffer\nexit        close terminal\nhelp        this menu`
